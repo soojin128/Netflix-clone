@@ -3,6 +3,7 @@
   width: 100%;
   height: auto;
   min-height: 50vh;
+  max-height: 80vh;
   color: #fff;
 }
 
@@ -11,6 +12,7 @@
   max-width: 100%;
   height: auto;
   min-height: 50vh;
+  max-height: 80vh;
   object-fit: cover;
 }
 
