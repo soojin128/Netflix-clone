@@ -54,4 +54,4 @@ function Row({title, fetchUrl}) {
   )
 }
 
-export default Row
+export default Row;

@@ -2,6 +2,9 @@ import axios from '../data/axios';
 import React, { useEffect, useState } from 'react';
 import '../styles/Banner.css';
 import requests from '../data/Requests';
+import {FiInfo} from 'react-icons/fi';
+import {FaPlay} from 'react-icons/fa';
+
 
 function Banner() {
   const [movie, setMovie] = useState([]);
@@ -33,8 +36,14 @@ function Banner() {
           {movie?.title || movie?.name || movie?.original_name}
         </h1>
         <div className="banner__buttons">
-          <button className="banner__button">재생</button>
-          <button className="banner__button">상세정보</button>
+          <button className="banner__button">
+            <FaPlay className="play-icon"/>
+            재생
+            </button>
+          <button className="banner__button">
+            <FiInfo className="info-icon"/>
+            상세정보
+            </button>
         </div>
         <h3 className="banner__description">
           {truncate(movie?.overview,150)}
