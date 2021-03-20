@@ -16,6 +16,7 @@ function Login() {
           alt="logo" 
           />
           <button 
+          onClick={() => setSignIn(true)}
           className="loginScreen__button">
             로그인
           </button>
